@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: getter and setter
+# key: getter-and-setter
+# --
+public void set${1:$(capitalize text)}(${2:type} arg){
+    _$1 = arg;
+}
+public $2 get${1:$(capitalize text)}(){
+    return _$1;
+}
+$0

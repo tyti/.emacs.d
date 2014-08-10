@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: template
+# key: template
+# --
+#!/bin/sh
+
+function ${1:`(file-name-sans-extension (buffer-name))`}(){
+  $0
+}
+

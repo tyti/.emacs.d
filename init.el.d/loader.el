@@ -10,6 +10,7 @@
 (load "popwin.init" t)
 (load "helm.init" t)
 (load "auto-complete.init" t)
+(load "yasnippet.init" t)
 (load "edit.init" t)
 (load "view.init" t)
 

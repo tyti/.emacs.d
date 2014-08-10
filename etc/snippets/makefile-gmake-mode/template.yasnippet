@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: template
+# key: template
+# --
+# Makefile
+
+BUILD_TARGETS=${1:targets}
+CC=${2:command}
+
+.PHONY:all clean
+all:$(BUILD_TARGETS)
+
+clean:
+	rm $(BUILD_TARGETS)
+
+$1: 
+	$(CC) $0
+

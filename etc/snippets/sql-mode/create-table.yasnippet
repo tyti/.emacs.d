@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: create-table
+# key: create-table
+# --
+create table if not exists `$0` (
+  `id` int unsigned primary key auto_increment
+  , `name` varchar(255) not null
+) Engine=InnoDB default charset=utf8;

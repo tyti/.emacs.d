@@ -3,8 +3,9 @@
 
 (require 'pallet)
 
-(require 'redo+)
-
+(when (require 'redo+ nil t)
+  (global-set-key (kbd "C-^") 'redo)
+  (setq undo-no-redo t))
 
 (load "popwin.init" t)
 (load "helm.init" t)

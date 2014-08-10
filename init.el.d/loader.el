@@ -13,6 +13,7 @@
 (load "yasnippet.init" t)
 (load "edit.init" t)
 (load "view.init" t)
+(load "whitespace.init" t)
 
 ;; env
 (when (or (eq system-type 'cygwin)

@@ -17,8 +17,8 @@
 
 ;; env
 (when (or (eq system-type 'cygwin)
-	  (eq system-type 'windows-nt)
-	  (featurep 'meadow) )
+    (eq system-type 'windows-nt)
+    (featurep 'meadow) )
   (load "win" t))
 
 (when (eq system-type 'darwin)
@@ -28,5 +28,5 @@
   (load "linux" t))
 
 ;; not display error message
-;(setq debug-on-error nil) 			      
+;(setq debug-on-error nil)
 

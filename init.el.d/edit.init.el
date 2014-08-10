@@ -29,7 +29,7 @@
 (put 'upcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
 
-;; default to unified diffs 
+;; default to unified diffs
 (setq diff-switches "-u")
 
 (setq-default tab-width 2)

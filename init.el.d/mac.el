@@ -1,6 +1,8 @@
+;; mac.el
+
 (global-set-key (kbd "C-h") 'delete-backward-char)
 
-;(mac-key-mode 1) 
+;(mac-key-mode 1)
 
 (defun copy-from-osx ()
   (shell-command-to-string "pbpaste"))

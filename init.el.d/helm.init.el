@@ -1,3 +1,5 @@
+;; helm.init.el
+
 (when (require 'helm-config nil t)
   ;; (helm-mode 1)
   ;; replace command
@@ -13,7 +15,7 @@
   (global-set-key (kbd "C-c r") 'helm-recentf)
 
   ;; helm command
-  ;(global-set-key (kbd "C-c h") 'helm-command-prefix)  
+  ;(global-set-key (kbd "C-c h") 'helm-command-prefix)
 
   ;(define-key helm-command-prefix (kbd "y") 'helm-show-kill-ring)
   ;(define-key helm-command-prefix (kbd "x") 'helm-M-x)

@@ -28,7 +28,7 @@
                (nth n choices))
            (signal 'quit "user quit!"))))
      (custom-set-variables '(yas/prompt-functions '(my-yas/prompt)))
-     (global-set-key (kbd "C-c y") 'yas/insert-snippet) 
+     (global-set-key (kbd "C-c y") 'yas/insert-snippet)
      ))
 
 (add-to-list 'auto-mode-alist '("\\.yasnippet$" . snippet-mode))

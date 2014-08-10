@@ -1,3 +1,5 @@
+;; loader.el
+
 (require 'cask)
 (cask-initialize)
 
@@ -29,4 +31,3 @@
 
 ;; not display error message
 ;(setq debug-on-error nil)
-

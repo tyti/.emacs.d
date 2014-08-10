@@ -1,3 +1,5 @@
+;; whitespace.init.el
+
 (require 'whitespace)
 
 (setq whitespace-style '(face tabs tab-mark spaces space-mark))
@@ -14,3 +16,5 @@
 (set-face-background 'whitespace-space nil)
 
 (global-whitespace-mode 1)
+
+(add-hook 'before-save-hook 'delete-trailing-whitespace)

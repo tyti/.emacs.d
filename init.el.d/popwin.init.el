@@ -1,3 +1,5 @@
+;; popwin.init.el
+
 (when (require 'popwin)
   (setq display-buffer-function 'popwin:display-buffer)
   (eval-after-load "helm"

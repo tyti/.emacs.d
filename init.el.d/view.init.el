@@ -1,6 +1,8 @@
+;; view.init.el
+
 ;; hide menu bar
 (menu-bar-mode 0)
-(when window-system 
+(when window-system
   (tool-bar-mode 0)
   (scroll-bar-mode 0) )
 

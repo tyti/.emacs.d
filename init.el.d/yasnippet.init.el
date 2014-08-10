@@ -11,6 +11,7 @@
 (yas/global-mode 1)
 
 ;; helm inferface
+;; reference: http://d.hatena.ne.jp/syohex/20121207/1354885367
 (eval-after-load "helm-config"
   '(progn
      (defun my-yas/prompt (prompt choices &optional display-fn)

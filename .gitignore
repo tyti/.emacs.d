@@ -2,5 +2,7 @@
 *~
 #*#
 *.elc
-.cask
-var
+
+.cask/
+var/
+etc/ac-dict

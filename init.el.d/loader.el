@@ -3,19 +3,19 @@
 (require 'cask)
 (cask-initialize)
 
+;; sync package and Cask
 (require 'pallet)
 
 (when (require 'redo+ nil t)
   (global-set-key (kbd "C-^") 'redo)
   (setq undo-no-redo t))
 
-(load "popwin.init" t)
-(load "helm.init" t)
-(load "auto-complete.init" t)
-(load "yasnippet.init" t)
-(load "edit.init" t)
-(load "view.init" t)
-(load "whitespace.init" t)
+;; load *.init.el in init.el.d
+(let ( (init-file-dir (concat user-emacs-directory "init.el.d/")) )
+   (dolist (file (directory-files init-file-dir))
+     (when (string-match "^\\(.*\\)\\.init\\.\\(el\\)$" file)
+       (load (concat init-file-dir file) t)
+       )))
 
 ;; env
 (when (or (eq system-type 'cygwin)

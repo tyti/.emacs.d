@@ -46,3 +46,5 @@
 (defun replace-M-to-return ()
   (interactive)
   (query-replace "\r" "\n"))
+
+(electric-indent-mode -1)

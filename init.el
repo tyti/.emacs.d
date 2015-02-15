@@ -9,7 +9,7 @@
 (load "loader" t)
 
 ; set encoding-systems
-(add-hook 'after-init-hook 
+(add-hook 'after-init-hook
     '(lambda()
        (prefer-coding-system 'utf-8-unix)
        (set-default-coding-systems 'utf-8-unix)

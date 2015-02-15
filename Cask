@@ -1,6 +1,7 @@
 (source gnu)
 (source melpa)
 
+(depends-on "async")
 (depends-on "auto-complete")
 (depends-on "bind-key")
 (depends-on "cask")
@@ -11,6 +12,7 @@
 (depends-on "f")
 (depends-on "flycheck")
 (depends-on "flycheck-cask")
+(depends-on "flycheck-color-mode-line")
 (depends-on "helm")
 (depends-on "helm-ag")
 (depends-on "htmlize")
@@ -19,6 +21,7 @@
 (depends-on "multiple-cursors")
 (depends-on "nyan-mode")
 (depends-on "pallet")
+(depends-on "php-mode")
 (depends-on "popwin")
 (depends-on "prodigy")
 (depends-on "projectile")

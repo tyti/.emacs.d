@@ -5,6 +5,7 @@
 
 ;; sync package and Cask
 (require 'pallet)
+(pallet-mode t)
 
 (when (require 'redo+ nil t)
   (global-set-key (kbd "C-^") 'redo)

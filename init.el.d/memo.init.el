@@ -1,6 +1,7 @@
 ;=====================
 ; web storage notebook
 ;=====================
+(setq webstorage-directory "~/Copy/text")
 (setq notebook-directory "~/Copy/text/note")
 
 (defun web-storage-notebook-open-new-file ()
@@ -38,7 +39,7 @@
                                   nil
                                   nil
                                   'grep-find-history)
-            notebook-directory)
+            webstorage-directory)
     ))
 
 (global-set-key (kbd "C-c M") 'web-storage-search)

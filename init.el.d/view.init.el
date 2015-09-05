@@ -1,4 +1,5 @@
 ;; view.init.el
+(load-theme 'tsdh-dark)
 
 ;; hide menu bar
 (menu-bar-mode 0)

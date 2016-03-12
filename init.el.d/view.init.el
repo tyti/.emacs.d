@@ -18,6 +18,8 @@
 (when (fboundp 'global-font-lock-mode)
   (global-font-lock-mode t))
 
+(size-indication-mode t)
+
 ; mode-line
 (setq-default mode-line-format
               '("-"

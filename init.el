@@ -1,10 +1,14 @@
-(when (> emacs-major-version 23)
-  (defvar user-emacs-directory "~/.emacs.d"))
+;(when (> emacs-major-version 23)
+;  (defvar user-emacs-directory "~/.emacs.d"))
+
+(defvar user-emacs-directory "~/.emacs.d")
 
 (defun add-to-load-path (path)
   (add-to-list 'load-path (concat user-emacs-directory path)))
 
 (add-to-load-path "init.el.d")
+(add-to-list 'load-path "~/.cask/")
+
 
 (load "loader" t)
 
@@ -20,3 +24,4 @@
        ;; (set-clipboard-coding-system 'utf-8-unix)
        ;; (set-file-name-coding-system 'utf-8-unix)
        ))
+(put 'downcase-region 'disabled nil)

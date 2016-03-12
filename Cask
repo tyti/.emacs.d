@@ -2,7 +2,7 @@
 (source melpa)
 
 (depends-on "async")
-(depends-on "auto-complete")
+(depends-on "company")
 (depends-on "bind-key")
 (depends-on "cask")
 (depends-on "dash")

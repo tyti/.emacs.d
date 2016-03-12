@@ -40,3 +40,12 @@
                 "-%-") )
 
 (setq mode-line-frame-identification " ")
+
+
+(defun adjust-window-width-80 ()
+  (interactive)
+  (when (> (frame-width) 80)
+    (enlarge-window-horizontally (- 79 (window-width)))
+  )
+)
+(global-set-key (kbd "C-c l") 'adjust-window-width-80)

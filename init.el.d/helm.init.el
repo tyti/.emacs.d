@@ -14,15 +14,14 @@
 
   (global-set-key (kbd "C-c r") 'helm-recentf)
 
-  ;; helm command
-  ;(global-set-key (kbd "C-c h") 'helm-command-prefix)
-
-  ;(define-key helm-command-prefix (kbd "y") 'helm-show-kill-ring)
-  ;(define-key helm-command-prefix (kbd "x") 'helm-M-x)
-  ;(define-key helm-command-prefix (kbd "m") 'helm-mini)
+  (global-unset-key (kbd "C-x r m"))
+  (global-unset-key (kbd "C-x r l"))
+  (global-set-key (kbd "C-x r l") 'helm-bookmarks)
 
   (when (require 'helm-files nil t)
     (when (require 'helm-ag nil t)
+      ;(custom-set-variables
+      ; '(helm-ag-command-option "--ignore-dir migrations"))
       (global-set-key (kbd "C-c f") 'helm-ag)
       )
     )

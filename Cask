@@ -22,7 +22,6 @@
 (depends-on "nyan-mode")
 (depends-on "pallet")
 (depends-on "php-mode")
-(depends-on "popwin")
 (depends-on "prodigy")
 (depends-on "projectile")
 (depends-on "redo+")

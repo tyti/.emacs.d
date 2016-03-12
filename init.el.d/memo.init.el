@@ -1,37 +1,32 @@
 ;=====================
-; web storage notebook
+; memo.init.el
 ;=====================
-(setq webstorage-directory "~/Copy/text")
-(setq notebook-directory "~/Copy/text/note")
-
-(defun web-storage-notebook-open-new-file ()
-  "open a new notebook"
+(defun create-note-file ()
+  "create note file"
   (interactive)
-  (when (not (file-directory-p
-              (concat notebook-directory
-                      (format-time-string "/%Y" (current-time)) )))
-    (make-directory (concat notebook-directory (format-time-string "/%Y"))) )
 
+  (when (not (getenv "TEXT_DIR"))
+    (error "TEXT_DIR environmental variable is not defined."))
+  (when (not (file-directory-p (getenv "TEXT_DIR")))
+    (error "TEXT_DIR %s is not exists."))
 
-  (when (not (file-directory-p (concat notebook-directory
-                                       (format-time-string "/%Y/%m"))))
-    (make-directory (concat notebook-directory (format-time-string "/%Y/%m"))))
-  (when (not (file-directory-p (concat notebook-directory
-                                       (format-time-string "/%Y/%m/%d"))))
-    (make-directory (concat notebook-directory (format-time-string "/%Y/%m/%d"))))
+  (setq text-dir (file-name-as-directory (getenv "TEXT_DIR")))
+  (shell-command
+   (concat "mkdir -p " (concat text-dir "note/" (format-time-string "%Y/%m/%d"))))
 
-  (find-file (concat notebook-directory (format-time-string "/%Y/%m/%d/%H%M%S") ".txt")))
+  (find-file (concat (concat text-dir "note/" (format-time-string "%Y/%m/%d/%H%M%S") ".txt")))
+ )
 
-(global-set-key (kbd "C-c m") 'web-storage-notebook-open-new-file)
+(global-set-key (kbd "C-c m") 'create-note-file)
 
-(defun web-storage-notebook-open-notebook-dir ()
-  "open the notebook dir"
+(defun search-text-dir()
+  "search text-dir"
   (interactive)
-  (dired notebook-directory))
+  (when (not (getenv "TEXT_DIR"))
+    (error "TEXT_DIR environmental variable is not defined."))
+  (when (not (file-directory-p (getenv "TEXT_DIR")))
+    (error "TEXT_DIR %s is not exists."))
 
-(defun web-storage-search()
-  "search words in notebook"
-  (interactive)
   (grep-find
     (format "ag --nocolor --nogroup -- %s %s"
             (read-from-minibuffer "words: "
@@ -39,7 +34,7 @@
                                   nil
                                   nil
                                   'grep-find-history)
-            webstorage-directory)
-    ))
+            (getenv "TEXT_DIR")))
+  )
 
-(global-set-key (kbd "C-c M") 'web-storage-search)
+(global-set-key (kbd "C-c M") 'search-text-dir)

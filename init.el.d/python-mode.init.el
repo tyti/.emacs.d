@@ -13,6 +13,9 @@
 (when (require 'jedi-core nil t)
   (setq jedi:complete-on-dot t)
   (setq jedi:use-shortcuts t)
+  (setq jedi:server-args
+        '("--virtual-env" "~/.emacs.d/.python-environments/for_complete"))
+
   (add-hook 'python-mode-hook 'jedi:setup)
   (add-to-list 'company-backends 'company-jedi) ; backendに追加
 )

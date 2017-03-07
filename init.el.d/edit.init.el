@@ -37,6 +37,8 @@
 
 ;; recentf
 (recentf-mode t)
+(setq recentf-max-saved-item 50)
+
 (custom-set-variables '(recentf-save-file
                         (expand-file-name ".recentf" (concat user-emacs-directory "/var"))
                         ))

@@ -43,6 +43,10 @@
                         (expand-file-name ".recentf" (concat user-emacs-directory "/var"))
                         ))
 
+;;
+(setq bookmark-default-file
+      (expand-file-name "bookmarks" (concat user-emacs-directory "/var")))
+
 ;; ^M = C-q C-M
 ;; RET = C-q C-j
 (defun replace-M-to-return ()

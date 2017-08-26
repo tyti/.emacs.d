@@ -26,6 +26,7 @@
                    jedi-core
                    magit
                    redo+
+                   sphinx-doc
                    ))
   (package-install package)
   )

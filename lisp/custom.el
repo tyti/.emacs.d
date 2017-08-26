@@ -12,7 +12,7 @@
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (jedi-core company-jedi flycheck helm-ag redo+ magit helm company)))
+    (sphinx-doc jedi-core company-jedi flycheck helm-ag redo+ magit helm company)))
  '(recentf-max-saved-items 50)
  '(recentf-mode t)
  '(size-indication-mode t))

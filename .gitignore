@@ -3,6 +3,7 @@
 #*#
 *.elc
 
-.cask/
-var/
-etc/ac-dict
+.python-environments/
+elpa/
+bookmarks
+recentf

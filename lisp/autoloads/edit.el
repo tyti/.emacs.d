@@ -31,3 +31,6 @@
   (query-replace "\r" "\n"))
 
 (electric-indent-mode -1)
+
+(require 'redo+)
+(global-set-key (kbd "C-^") 'redo)

@@ -10,6 +10,7 @@
  '(custom-enabled-themes (quote (tsdh-dark)))
  '(global-font-lock-mode t)
  '(inhibit-startup-screen t)
+ '(js-indent-level 2)
  '(package-selected-packages
    (quote
     (sphinx-doc jedi-core company-jedi flycheck helm-ag redo+ magit helm company)))

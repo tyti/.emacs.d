@@ -24,13 +24,14 @@
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
 
+(electric-indent-mode -1)
+(electric-pair-mode 1)
+
 ;; ^M = C-q C-M
 ;; RET = C-q C-j
 (defun replace-M-to-return ()
   (interactive)
   (query-replace "\r" "\n"))
-
-(electric-indent-mode -1)
 
 (require 'redo+)
 (global-set-key (kbd "C-^") 'redo)

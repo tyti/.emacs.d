@@ -13,9 +13,6 @@
 (global-set-key (kbd "C-w") 'kill-ring-save)
 (global-set-key (kbd "M-w") 'kill-region)
 
-(global-unset-key (kbd "C-u"))
-(global-set-key (kbd "C-u") 'backward-kill-word)
-
 ;; disable commands; default: C-x C-l
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)

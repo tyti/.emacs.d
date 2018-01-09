@@ -13,7 +13,7 @@
  '(js-indent-level 2)
  '(package-selected-packages
    (quote
-    (web-mode sphinx-doc jedi-core company-jedi flycheck helm-ag redo+ magit helm company)))
+    (smartrep web-mode sphinx-doc jedi-core company-jedi flycheck helm-ag redo+ magit helm company)))
  '(recentf-max-saved-items 50)
  '(recentf-mode t)
  '(size-indication-mode t))

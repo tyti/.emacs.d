@@ -20,13 +20,17 @@
 (dolist (package '(
                    company
                    company-jedi
+                   editorconfig
                    flycheck
                    helm
                    helm-ag
                    jedi-core
                    magit
                    redo+
+                   smartrep
                    sphinx-doc
+                   web-mode
+                   yaml-mode
                    ))
   (package-install package)
   )

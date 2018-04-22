@@ -12,4 +12,8 @@
                       ("C-h" . 'backward-kill-word)
                       ("SPC" . 'set-mark-command)
                       ("w" . 'kill-ring-save)
+                      ("p" . 'forward-paragraph)
+                      ("P" . 'backward-paragraph)
+                      ("{" . 'shrink-window-horizontally)
+                      ("}" . 'enlarge-window-horizontally)
                       )))

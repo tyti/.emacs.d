@@ -4,33 +4,34 @@
 (setq custom-file (my/abspath "lisp/custom.el"))
 (load (my/abspath "lisp/custom.el"))
 
+;; redo+ removed from melpa
+;; ref: https://github.com/melpa/melpa/pull/5385
+(load (my/abspath "lisp/redo+.el"))
+
 ;;
 ;; package
 ;;
 (require 'package)
 
-;; (setq package-user-dir (my/abspath "packages"))
-
 ;; MELPA
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
-; (package-refresh-contents)
 (package-initialize)
+
+; (package-refresh-contents)
 
 (dolist (package '(
                    company
-                   company-jedi
                    editorconfig
-                   flycheck
+                   ;; flycheck
                    helm
                    helm-ag
-                   jedi-core
                    magit
-                   redo+
                    smartrep
-                   sphinx-doc
+                   ;; sphinx-doc
                    web-mode
                    yaml-mode
+                   lsp-mode
                    ))
   (package-install package)
   )

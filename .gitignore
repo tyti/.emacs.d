@@ -3,7 +3,10 @@
 #*#
 *.elc
 
-.python-environments/
-elpa/
 bookmarks
+elpa/
+eww-bookmarks
+ido.last
+projectile-bookmarks.eld
 recentf
+url/

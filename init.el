@@ -22,16 +22,18 @@
 
 (dolist (package '(
                    company
+                   company-lsp
                    editorconfig
-                   ;; flycheck
                    helm
                    helm-ag
+                   lsp-mode
+                   lsp-python
+                   lsp-ui
                    magit
+                   projectile
                    smartrep
-                   ;; sphinx-doc
                    web-mode
                    yaml-mode
-                   lsp-mode
                    ))
   (package-install package)
   )

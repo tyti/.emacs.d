@@ -33,5 +33,6 @@
   (interactive)
   (query-replace "\r" "\n"))
 
-(require 'redo+)
-(global-set-key (kbd "C-^") 'redo)
+(when (require 'redo+ nil t)
+  (global-set-key (kbd "C-^") 'redo)
+)

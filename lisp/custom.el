@@ -8,6 +8,7 @@
  ;; If there is more than one, they won't work right.
  '(company-selection-wrap-around t)
  '(custom-enabled-themes (quote (tsdh-dark)))
+ '(eww-search-prefix "https://google.com/search?q=")
  '(global-font-lock-mode t)
  '(inhibit-startup-screen t)
  '(js-indent-level 2)

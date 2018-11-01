@@ -36,3 +36,5 @@
 (when (require 'redo+ nil t)
   (global-set-key (kbd "C-^") 'redo)
 )
+
+(setq mode-require-final-newline t)

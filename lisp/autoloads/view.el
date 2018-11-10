@@ -23,7 +23,7 @@
                 " %[("
                 mode-name
                 mode-line-process
-                minor-mode-alist
+                ;; minor-mode-alist
                 "%n" ")%]-"
                 (which-func-mode ("" which-func-format "-"))
                 (line-number-mode "L%l-")

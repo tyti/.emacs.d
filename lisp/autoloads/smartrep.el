@@ -14,6 +14,7 @@
                       ("w" . 'kill-ring-save)
                       ("p" . 'forward-paragraph)
                       ("P" . 'backward-paragraph)
+                      ("h" . 'mark-paragraph)
                       ("{" . 'shrink-window-horizontally)
                       ("}" . 'enlarge-window-horizontally)
                       )))

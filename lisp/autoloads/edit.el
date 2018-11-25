@@ -25,7 +25,7 @@
 (setq-default indent-tabs-mode nil)
 
 (electric-indent-mode -1)
-(electric-pair-mode 1)
+; (electric-pair-mode 1)
 
 ;; ^M = C-q C-M
 ;; RET = C-q C-j

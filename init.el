@@ -24,6 +24,7 @@
                    company
                    company-lsp
                    editorconfig
+                   eglot
                    helm
                    helm-ag
                    lsp-mode

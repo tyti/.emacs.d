@@ -1,4 +1,5 @@
 ;; https://github.com/emacs-lsp/lsp-mode
+;; なんかエラー出るので eglot を使っている
 
 (when (require 'lsp-mode nil t)
   ;; make sure we have lsp-imenu everywhere we have LSP
@@ -22,4 +23,12 @@
   ;; (add-hook 'lsp-mode-hook 'lsp-ui-mode)
 
   ;; (push 'company-lsp company-backends)
+
+  ;; (lsp-define-tcp-client lsp-jsts
+  ;;                        "javascript"
+  ;;                        (lambda () "/tmp")
+  ;;                        '("/usr/bin/false")
+  ;;                        "localhost"
+  ;;                        2089)
+  ;; (add-hook 'js-mode-hook #'lsp-jsts-enable)
 )

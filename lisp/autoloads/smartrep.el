@@ -17,4 +17,6 @@
                       ("h" . 'mark-paragraph)
                       ("{" . 'shrink-window-horizontally)
                       ("}" . 'enlarge-window-horizontally)
+                      ("[" . 'indent-rigidly-left)
+                      ("]" . 'indent-rigidly-right)
                       )))

@@ -23,6 +23,8 @@
 (dolist (package '(
                    company
                    company-lsp
+                   csv-mode
+                   docker
                    editorconfig
                    eglot
                    helm

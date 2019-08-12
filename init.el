@@ -29,6 +29,7 @@
                    eglot
                    helm
                    helm-ag
+                   hydra
                    lsp-mode
                    lsp-python
                    lsp-ui

@@ -10,4 +10,5 @@
     (define-key dired-mode-map (kbd "M-o") 'my/dired-open-file)
     (define-key dired-mode-map (kbd "^")
       (lambda () (interactive) (find-alternate-file "..")))
+    (define-key dired-mode-map (kbd "C-o") nil)
   ))

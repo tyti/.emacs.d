@@ -14,7 +14,7 @@
  '(js-indent-level 2)
  '(package-selected-packages
    (quote
-    (hydra docker csv-mode eglot lsp-mode helm company yaml-mode web-mode smartrep projectile magit lsp-ui lsp-python helm-ag editorconfig company-lsp)))
+    (## transient hydra docker csv-mode eglot lsp-mode helm company yaml-mode web-mode smartrep projectile magit lsp-ui lsp-python helm-ag editorconfig company-lsp)))
  '(python-indent-guess-indent-offset-verbose nil)
  '(recentf-max-saved-items 50)
  '(recentf-mode t)

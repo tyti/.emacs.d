@@ -18,7 +18,8 @@
  '(python-indent-guess-indent-offset-verbose nil)
  '(recentf-max-saved-items 50)
  '(recentf-mode t)
- '(size-indication-mode t))
+ '(size-indication-mode t)
+ '(xterm-mouse-mode t))
 
 
 (custom-set-faces

@@ -28,7 +28,7 @@
     (error "TEXT_DIR %s is not exists."))
 
   (grep-find
-    (format "ag --nocolor --nogroup -- %s %s"
+    (format "ag --nocolor --nogroup -- '%s' %s"
             (read-from-minibuffer "words: "
                                   ""
                                   nil

@@ -20,7 +20,7 @@
  '(recentf-max-saved-items 50)
  '(recentf-mode t)
  '(size-indication-mode t)
- '(xterm-mouse-mode t))
+ '(xterm-mouse-mode nil))
 
 
 (custom-set-faces

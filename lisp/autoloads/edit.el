@@ -38,3 +38,5 @@
 )
 
 (setq mode-require-final-newline t)
+
+(add-to-list 'auto-mode-alist '("\\.mjs\\'" . javascript-mode))

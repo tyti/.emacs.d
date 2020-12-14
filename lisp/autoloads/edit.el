@@ -18,6 +18,9 @@
 (put 'upcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
 
+;; switch C-h to backspace on isearch-mode
+(define-key isearch-mode-map (kbd "C-h") 'isearch-del-char)
+
 ;; default to unified diffs
 (setq diff-switches "-u")
 

@@ -7,15 +7,15 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(company-selection-wrap-around t)
- '(custom-enabled-themes (quote (tsdh-dark)))
- '(epa-pinentry-mode (quote loopback))
+ '(custom-enabled-themes '(tsdh-dark))
+ '(epa-pinentry-mode 'loopback)
+ '(epg-pinentry-mode 'loopback)
  '(eww-search-prefix "https://google.com/search?q=")
  '(global-font-lock-mode t)
  '(inhibit-startup-screen t)
  '(js-indent-level 2)
  '(package-selected-packages
-   (quote
-    (## transient hydra docker csv-mode eglot lsp-mode helm company yaml-mode web-mode smartrep projectile magit lsp-ui lsp-python helm-ag editorconfig company-lsp)))
+   '(eglot yaml-mode web-mode smartrep projectile magit hydra helm-ag helm editorconfig docker csv-mode company ##))
  '(python-indent-guess-indent-offset-verbose nil)
  '(recentf-max-saved-items 50)
  '(recentf-mode t)

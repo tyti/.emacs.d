@@ -22,7 +22,6 @@
 
 (dolist (package '(
                    company
-                   company-lsp
                    csv-mode
                    docker
                    editorconfig
@@ -30,9 +29,6 @@
                    helm
                    helm-ag
                    hydra
-                   lsp-mode
-                   lsp-python
-                   lsp-ui
                    magit
                    projectile
                    smartrep

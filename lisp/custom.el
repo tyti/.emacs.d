@@ -15,7 +15,7 @@
  '(inhibit-startup-screen t)
  '(js-indent-level 2)
  '(package-selected-packages
-   '(eglot yaml-mode web-mode smartrep projectile magit hydra helm-ag helm editorconfig docker csv-mode company ##))
+   '(markdown-mode eglot yaml-mode web-mode smartrep projectile magit hydra helm-ag helm editorconfig docker csv-mode company ##))
  '(python-indent-guess-indent-offset-verbose nil)
  '(recentf-max-saved-items 50)
  '(recentf-mode t)

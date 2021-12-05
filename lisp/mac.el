@@ -1,7 +1,5 @@
 ;; mac.el
 
-(global-set-key (kbd "C-h") 'delete-backward-char)
-
 ;(mac-key-mode 1)
 
 (defun copy-from-osx ()

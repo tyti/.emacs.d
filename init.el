@@ -51,3 +51,6 @@
 ;; envionment specific
 (when (eq system-type 'darwin)
   (load (my/abspath "lisp/mac.el")) )
+
+(when (eq system-type 'gnu/linux)
+  (load (my/abspath "lisp/wsl.el")) )

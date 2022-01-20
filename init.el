@@ -53,4 +53,8 @@
   (load (my/abspath "lisp/mac.el")) )
 
 (when (eq system-type 'gnu/linux)
-  (load (my/abspath "lisp/wsl.el")) )
+  (if (file-exists-p "/mnt/C")
+    (load (my/abspath "lisp/wsl.el"))
+    (load (my/abspath "lisp/linux.el"))
+    )
+  )

@@ -22,16 +22,17 @@
 
 (dolist (package '(
                    company
+                   consult
+                   consult-ag
                    csv-mode
                    docker
                    editorconfig
                    eglot
-                   helm
-                   helm-ag
                    hydra
                    magit
+                   markdown-mode
                    projectile
-                   smartrep
+                   vertico
                    web-mode
                    yaml-mode
                    ))

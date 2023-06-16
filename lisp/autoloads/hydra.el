@@ -1,13 +1,13 @@
 ;; hydra.init.el
 
-; helmとカーソル操作分けた方良さそうだけどキーが余ってない...
 (when (require 'hydra nil t)
-  (defhydra hydra-helm (global-map "C-o")
-    "helm"
-    ("x" helm-M-x "helm-M-x" :exit t)
-    ("y" helm-show-kill-ring "helm-show-kill-ring" :exit t)
-    ("r" helm-recentf "helm-recentf" :exit t)
-    ("R" helm-bookmarks "helm-bookmarks" :exit t)
+  (defhydra hydra-o (global-map "C-o")
+    "hydra shortcuts"
+    ("x" execute-extended-command "" :exit t)
+    ("y" yank-from-kill-ring "" :exit t)
+    ;; depends on consult and vertico
+    ("r" consult-recent-file "" :exit t)
+    ("R" consult-bookmark "" :exit t)
     ("v" scroll-up)
     ("V" scroll-down)
     ("f" forward-word)

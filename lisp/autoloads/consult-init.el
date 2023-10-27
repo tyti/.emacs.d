@@ -1,6 +1,8 @@
 ;; consult-init.el
 
 (when (require 'consult nil t)
+  (setq consult-project-function nil)
+
   (global-unset-key (kbd "C-x C-b"))
   (global-set-key (kbd "C-x C-b") 'consult-buffer)
 

@@ -15,7 +15,7 @@
  '(inhibit-startup-screen t)
  '(js-indent-level 2)
  '(package-selected-packages
-   '(consult-ag consult vertico markdown-mode eglot yaml-mode web-mode projectile magit hydra editorconfig docker csv-mode company ##))
+   '(kotlin-mode consult-ag consult vertico markdown-mode eglot yaml-mode web-mode projectile magit hydra editorconfig docker csv-mode company ##))
  '(python-indent-guess-indent-offset-verbose nil)
  '(recentf-max-saved-items 50)
  '(recentf-mode t)

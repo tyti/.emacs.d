@@ -7,7 +7,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(company-selection-wrap-around t)
- '(custom-enabled-themes '(tsdh-dark))
+ '(custom-enabled-themes '(modus-vivendi))
  '(epa-pinentry-mode 'loopback)
  '(epg-pinentry-mode 'loopback)
  '(eww-search-prefix "https://google.com/search?q=")

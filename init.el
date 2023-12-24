@@ -8,6 +8,7 @@
 ;; ref: https://github.com/melpa/melpa/pull/5385
 (load (my/abspath "lisp/redo+.el"))
 
+
 ;;
 ;; package
 ;;
@@ -17,27 +18,9 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
 (package-initialize)
-
 ; (package-refresh-contents)
+(package-install-selected-packages)
 
-(dolist (package '(
-                   company
-                   consult
-                   consult-ag
-                   csv-mode
-                   docker
-                   editorconfig
-                   eglot
-                   hydra
-                   magit
-                   markdown-mode
-                   projectile
-                   vertico
-                   web-mode
-                   yaml-mode
-                   ))
-  (package-install package)
-  )
 
 ;;
 ;; load configulation scripts

@@ -17,6 +17,8 @@
  '(package-selected-packages
    '(rg consult vertico markdown-mode eglot yaml-mode web-mode projectile magit hydra editorconfig docker csv-mode company ##))
  '(python-indent-guess-indent-offset-verbose nil)
+ '(recentf-exclude
+   '("/\\(\\(\\(COMMIT\\|NOTES\\|PULLREQ\\|MERGEREQ\\|TAG\\)_EDIT\\|MERGE_\\|\\)MSG\\|\\(BRANCH\\|EDIT\\)_DESCRIPTION\\)\\'" "\\\\.gpg"))
  '(recentf-max-saved-items 50)
  '(recentf-mode t)
  '(size-indication-mode t)

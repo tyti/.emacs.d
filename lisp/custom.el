@@ -29,5 +29,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(markdown-code-face ((t (:inherit modus-themes-fixed-pitch :extend t :background "gray0"))))
+ '(region ((t (:extend t :background "steelblue" :foreground "#ffffff"))))
  '(whitespace-space ((t (:foreground "cyan"))))
  '(whitespace-tab ((t (:foreground "cyan")))))

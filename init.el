@@ -4,10 +4,6 @@
 (setq custom-file (my/abspath "lisp/custom.el"))
 (load (my/abspath "lisp/custom.el"))
 
-;; redo+ removed from melpa
-;; ref: https://github.com/melpa/melpa/pull/5385
-(load (my/abspath "lisp/redo+.el"))
-
 
 ;;
 ;; package

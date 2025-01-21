@@ -1,6 +1,6 @@
 (when (require 'company nil t)
   (add-hook 'after-init-hook 'global-company-mode)
-  ; (setq company-idle-delay 0) ; default 0.5
+  (setq company-idle-delay 0.5) ; default 0.5
   ; (setq company-minimum-prefix-length 2) ; default 4
   (setq completion-ignore-case t)
   (define-key company-active-map (kbd "M-n") nil)

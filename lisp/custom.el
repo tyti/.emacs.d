@@ -7,6 +7,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(company-selection-wrap-around t)
+ '(create-lockfiles nil)
  '(custom-enabled-themes '(modus-vivendi))
  '(epa-pinentry-mode 'loopback)
  '(epg-pinentry-mode 'loopback)
